@@ -46,11 +46,11 @@ const Home = () => {
   const handleGenerate = async () => {
     setLoading(true);
     setSegments([]);
-    const response = await fetch("/api/supercut", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ videoUrl, keywords }),
-    });
+    const response = await fetch(
+      `/api/supercut?videoUrl=${encodeURIComponent(
+        videoUrl
+      )}&keywords=${encodeURIComponent(keywords)}`
+    );
 
     if (response.ok) {
       const data = await response.json();
@@ -158,12 +158,6 @@ const Home = () => {
                 onClick={() => playSegment(segment.start)}
               >
                 <p className={styles.segmentText}>{segment.text}</p>
-                {/* <button
-                  className={styles.playButton}
-                  onClick={() => playSegment(segment.start)}
-                >
-                  play segment
-                </button> */}
               </div>
             ))}
           </div>
