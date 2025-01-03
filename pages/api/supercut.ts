@@ -5,12 +5,16 @@ import { getSubtitles } from "youtube-captions-scraper";
 async function scrapeSubtitles(
   videoId: string
 ): Promise<{ start: number; dur: number; text: string }[] | null> {
-  const data = await getSubtitles({
-    videoID: videoId,
-    lang: "en",
-  });
-
-  return data;
+  try {
+    const data = await getSubtitles({
+      videoID: videoId,
+      lang: "en",
+    });
+    return data;
+  } catch (error) {
+    console.error("Error fetching subtitles:", error);
+    return null;
+  }
 }
 
 // Function to parse subtitles (SRT format) and extract segments matching keywords
@@ -45,6 +49,10 @@ export default async function handler(
   }
 
   const { videoUrl, keywords } = req.query;
+  if (!videoUrl || !keywords) {
+    return res.status(400).json({ error: "Missing videoUrl or keywords" });
+  }
+
   const videoId = new URL(videoUrl as string).searchParams.get("v");
 
   if (!videoId) {
