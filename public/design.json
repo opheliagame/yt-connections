@@ -1,0 +1,92 @@
+{
+  "names": [
+    "roam roam roaming",
+    "find the word",
+    "yt caption roamer",
+    "yet another way to watch things",
+    "yet another way to watch",
+    "yet another way to watch youtube",
+    "capture the caption",
+    "caption capture",
+    "caption capture roam",
+    "caption capture roamer",
+    "caption capture roamer roam",
+    "catch me if you can"
+  ],
+  "themes": [
+    {
+      "primary": "#FF6F61",
+      "secondary": "#F7CAC9",
+      "accent": "#88B04B",
+      "background": "#92A8D1",
+      "text": "#FFCC00"
+    },
+    {
+      "primary": "#FF7F50",
+      "secondary": "#FF4500",
+      "accent": "#FFA07A",
+      "background": "#00BFFF",
+      "text": "#FFD700"
+    },
+    {
+      "primary": "#FF69B4",
+      "secondary": "#FF1493",
+      "accent": "#C2C2F0",
+      "background": "#FF6347",
+      "text": "#00FA9A"
+    },
+    {
+      "primary": "#32CD32",
+      "secondary": "#FFA07A",
+      "accent": "#FF8C00",
+      "background": "#4682B4",
+      "text": "#FF6347"
+    },
+    {
+      "primary": "#00FA9A",
+      "secondary": "#7B68EE",
+      "accent": "#1E90FF",
+      "background": "#FFB3E6",
+      "text": "#FF4500"
+    },
+    {
+      "primary": "#FFCC00",
+      "secondary": "#D2691E",
+      "accent": "#FF1493",
+      "background": "#40E0D0",
+      "text": "#9370DB"
+    },
+    {
+      "primary": "#FF6347",
+      "secondary": "#8B0000",
+      "accent": "#FF8C00",
+      "background": "#F08080",
+      "text": "#00BFFF"
+    },
+    {
+      "primary": "#6495ED",
+      "secondary": "#FF4500",
+      "accent": "#00FA9A",
+      "background": "#FFCC00",
+      "text": "#FF69B4"
+    },
+    {
+      "primary": "#DA70D6",
+      "secondary": "#FF6347",
+      "accent": "#FFA07A",
+      "background": "#ADD8E6",
+      "text": "#FF7F50"
+    },
+    {
+      "primary": "#FF6F61",
+      "secondary": "#F0E68C",
+      "accent": "#FFB6C1",
+      "background": "#32CD32",
+      "text": "#FF1493"
+    }
+  ],
+  "seed": {
+    "url": "https://www.youtube.com/watch?v=0M1UCYRZAtM",
+    "query": "why"
+  }
+}

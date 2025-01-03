@@ -1,0 +1,163 @@
+:root {
+  --primary-color: #ff00ee;
+  --secondary-color: #83ff40;
+  --accent-color: #3f51b5;
+  --background-color: #e1bee7;
+  --text-color: #000000;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  box-sizing: border-box;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
+  padding: 10px;
+
+  position: relative;
+}
+
+.title {
+  color: var(--secondary-color);
+  font-size: 2em;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-shadow: 1px 1px var(--accent-color);
+  border-radius: 10px;
+}
+
+.input {
+  padding: 10px;
+  margin: 5px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  font-size: 1em;
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+  box-shadow: 2px 2px var(--accent-color);
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 2px 2px var(--accent-color);
+}
+
+.button:disabled {
+  background-color: #555;
+  color: #ccc;
+}
+
+.supercutContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  overflow-y: hidden;
+}
+
+.subtitle {
+  color: var(--secondary-color);
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-shadow: 1px 1px var(--accent-color);
+  border-radius: 10px;
+}
+
+.videoContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video {
+  margin: 10px 0;
+  border: 3px solid var(--secondary-color);
+  border-radius: 10px;
+  box-shadow: 3px 3px var(--accent-color);
+}
+
+.segmentsContainer {
+  height: 100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  overflow-y: auto;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.segment {
+  max-width: 200px;
+  background-color: var(--accent-color);
+  padding: 10px;
+  margin: 5px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  box-shadow: 2px 2px var(--secondary-color);
+  position: absolute;
+  top: calc((80% * var(--random-top)));
+  left: calc((80% * var(--random-left)));
+  transform: rotate(var(--random-rotate));
+  cursor: pointer;
+}
+
+.segmentText {
+  color: var(--text-color);
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.segmentTime {
+  color: #333;
+  font-size: 0.8em;
+}
+
+.playButton {
+  padding: 5px 10px;
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 2px 2px var(--secondary-color);
+}
+
+.themeButton {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  border: none;
+  cursor: pointer;
+  box-shadow: 2px 2px var(--secondary-color);
+  color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
